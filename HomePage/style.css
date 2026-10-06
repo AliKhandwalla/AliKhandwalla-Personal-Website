@@ -1,0 +1,92 @@
+/* Color variables - I learned this so that when you want to set like an 'enviornment
+variable' sort of thing you can add this so you can use it across the website*/
+:root {
+  --cream: #fff2d7;
+  --peach: #ffe0b5;
+  --apricot: #f8c794;
+  --caramel: #d8ae7e;
+
+  --off-white: #fff9ef;
+  --espresso: #3d3028;
+  --cocoa: #6b5142;
+
+  --terracotta: #c9785c;
+  --sage: #a8b79e;
+  --teal: #688f88;
+  --lavender: #b39bc8;
+}
+
+
+/* Whole page */
+body {
+  margin: 30px;
+
+  /* Manrope for normal text */
+  font-family: "Manrope", sans-serif;
+
+  background-color: var(--cream);
+  color: var(--espresso);
+}
+
+
+/* Headings */
+h1,
+h2,
+h3 {
+  font-family: "Fraunces", Georgia, serif;
+}
+
+h1 {
+  font-size: 100px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+/* Top navigation */
+.topnav {
+  background-color: var(--caramel);
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  border-radius: 50px; 
+}
+
+
+/* Navigation links */
+.topnav a {
+  color: var(--espresso);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+
+/* Hover */
+.topnav a:hover {
+  background-color: var(--peach);
+  color: var(--espresso);
+}
+
+
+/* Current page */
+.topnav a.active {
+  background-color: var(--terracotta);
+  color: var(--off-white);
+}
+
+/* Main image */
+.main-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+  width: 40%;
+  height: auto;
+  border-radius: 30px; 
+  mix-blend-mode: multiply; /* cool thing i learned that makes the image blend with the background color */
+}
