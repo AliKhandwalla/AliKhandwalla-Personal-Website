@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reach Out</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <div class="topnav">
+            <a href="../HomePage/index.html">Home</a>
+            <a href="../AboutMePage/index.html">About Me</a>
+            <a href="../MyActivitiesPage/index.html">My Activities</a>
+            <a href="../MyProjectsPage/index.html">My Projects</a>
+            <a class="active" href="index.html">Reach Out</a>
+        </div>
+        <h1>Reach Out</h1>
+    </header>
+
+    <main>
+        <!-- This section introduces the contact page -->
+        <section class="contact">
+            <h2>Get in Touch</h2>
+            <p>
+                Interested in collaborating, discussing projects,
+                or simply connecting? Feel free to reach out!
+            </p>
+        </section>
+
+        <!-- These sections provide my email and GitHub information -->
+        <section class="contact">
+            <h2>Email</h2>
+            <p>
+                The best way to contact me directly.
+            </p>
+            <a href="mailto:ali_khandwalla@s.thevillageschool.com">
+                ali_khandwalla@s.thevillageschool.com
+            </a>
+        </section>
+
+        <section class="contact">
+            <h2>GitHub</h2>
+            <p>
+                Explore my programming projects and repositories.
+            </p>
+            <a href="https://github.com/AliKhandwalla" target="_blank" rel="noopener noreferrer">
+                Visit My GitHub →
+            </a>
+        </section>
+
+        <!-- Contact Form -->
+        <section class="contact">
+            <h2>Send Me a Message</h2>
+            <p>
+                Have a question or want to collaborate?
+                Fill out the form below!
+            </p>
+
+            <!-- The required attribute makes sure the fields are filled out -->
+            <form action="#" method="post">
+                <div>
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+
+                <div>
+                    <label for="email">Your Email:</label>
+                    <!-- if you put email as type, it forces email with stuff like @ and .com-->
+                    <!-- the placeholder puts like a text type of thing that says what to write-->
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+
+                <div>
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message" rows="6" placeholder="Write your message here..."
+                        required></textarea>
+                </div>
+
+                <!-- Submit button (doesn't do anything until JS is implemented)-->
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>

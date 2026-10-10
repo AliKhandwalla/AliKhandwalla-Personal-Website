@@ -51,7 +51,7 @@ h1 {
 
   display: flex;
   justify-content: center;
-  border-radius: 50px; 
+  border-radius: 50px;
 }
 
 
@@ -87,6 +87,7 @@ h1 {
   margin-top: 5px;
   width: 40%;
   height: auto;
-  border-radius: 30px; 
-  mix-blend-mode: multiply; /* cool thing i learned that makes the image blend with the background color */
+  border-radius: 30px;
+  mix-blend-mode: multiply;
+  /* cool thing i learned that makes the image blend with the background color */
 }

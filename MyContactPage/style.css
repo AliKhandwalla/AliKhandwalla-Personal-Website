@@ -1,0 +1,196 @@
+
+/* Color variables - I learned this so that when you want to set like an 'environment
+variable' sort of thing you can add this so you can use it across the website */
+:root {
+    --cream: #fff2d7;
+    --peach: #ffe0b5;
+    --apricot: #f8c794;
+    --caramel: #d8ae7e;
+
+    --off-white: #fff9ef;
+    --espresso: #3d3028;
+    --cocoa: #6b5142;
+
+    --terracotta: #c9785c;
+    --sage: #a8b79e;
+    --teal: #688f88;
+    --lavender: #b39bc8;
+}
+
+
+/* Whole page */
+body {
+    margin: 30px;
+
+    /* Manrope for normal text */
+    font-family: "Manrope", sans-serif;
+
+    background-color: var(--cream);
+    color: var(--espresso);
+}
+
+
+/* Headings */
+h1,
+h2,
+h3 {
+    font-family: "Fraunces", Georgia, serif;
+}
+
+h1 {
+    font-size: 100px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+/* Top navigation */
+.topnav {
+    background-color: var(--caramel);
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    border-radius: 50px;
+}
+
+
+/* Navigation links */
+.topnav a {
+    color: var(--espresso);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+
+/* Hover */
+.topnav a:hover {
+    background-color: var(--peach);
+    color: var(--espresso);
+}
+
+
+/* Current page */
+.topnav a.active {
+    background-color: var(--terracotta);
+    color: var(--off-white);
+}
+
+
+/* Main content - This makes it so the contact information
+doesn't stretch across the entire screen */
+main {
+    max-width: 800px;
+    margin: auto;
+}
+
+
+/* Contact sections - Each section has a different background
+and some space around the text so it looks nicer */
+.contact {
+    background-color: var(--off-white);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+
+
+/* Contact headings - This changes the size of the headings
+inside each contact section */
+.contact h2 {
+    font-size: 28px;
+}
+
+
+/* Contact paragraphs - This makes the text easier to read
+and changes the color to one of my variables */
+.contact p {
+    color: var(--cocoa);
+    line-height: 1.6;
+}
+
+
+/* Contact links - This changes the color of links
+so they stand out from the normal text */
+.contact a {
+    color: var(--terracotta);
+    font-weight: 600;
+    text-decoration: none;
+    overflow-wrap: anywhere;
+}
+
+
+/* Contact link hover - This makes links change color
+when someone puts their mouse over them */
+.contact a:hover {
+    color: var(--cocoa);
+    text-decoration: underline;
+}
+
+
+/* Form labels - This makes the labels appear above
+the input fields instead of next to them */
+.contact label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+
+/* Form inputs - This styles the text boxes where
+someone can enter their name and email */
+.contact input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+
+    background-color: var(--cream);
+    border: 2px solid var(--caramel);
+    border-radius: 8px;
+
+    font-family: "Manrope", sans-serif;
+    box-sizing: border-box;
+}
+
+
+/* Text area - This styles the larger box where
+someone can type their message */
+.contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+
+    background-color: var(--cream);
+    border: 2px solid var(--caramel);
+    border-radius: 8px;
+
+    font-family: "Manrope", sans-serif;
+    box-sizing: border-box;
+}
+
+
+/* Submit button - This changes how the button looks
+and makes the mouse show a pointer when hovering */
+.contact button {
+    background-color: var(--terracotta);
+    color: var(--off-white);
+
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+
+    font-family: "Manrope", sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+/* Button hover - Changes the background color
+when someone puts their mouse over the button */
+.contact button:hover {
+    background-color: var(--cocoa);
+}
