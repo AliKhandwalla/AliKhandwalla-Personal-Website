@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -52,7 +53,8 @@
             <p>
                 Explore my programming projects and repositories.
             </p>
-            <a href="https://github.com/AliKhandwalla" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/AliKhandwalla"
+               target="_blank" rel="noopener noreferrer">
                 Visit My GitHub →
             </a>
         </section>
@@ -65,27 +67,92 @@
                 Fill out the form below!
             </p>
 
-            <!-- The required attribute makes sure the fields are filled out -->
+            <!-- Required makes sure the visitor fills out the fields -->
             <form action="#" method="post">
+
                 <div>
                     <label for="name">Your Name:</label>
-                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your name"
+                        required>
                 </div>
 
                 <div>
                     <label for="email">Your Email:</label>
-                    <!-- if you put email as type, it forces email with stuff like @ and .com-->
-                    <!-- the placeholder puts like a text type of thing that says what to write-->
-                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    <!-- Email type checks for a valid email format -->
+                    <!-- Placeholder shows example text inside the box -->
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        required>
                 </div>
 
                 <div>
                     <label for="message">Your Message:</label>
-                    <textarea id="message" name="message" rows="6" placeholder="Write your message here..."
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="6"
+                        placeholder="Write your message here..."
                         required></textarea>
                 </div>
 
-                <!-- Submit button (doesn't do anything until JS is implemented)-->
+                <!-- Radio buttons - Visitors choose why they are contacting me -->
+                <!-- Using the same name means only one option can be selected -->
+                <fieldset>
+                    <legend>Why are you reaching out?</legend>
+
+                    <div>
+                        <input
+                            type="radio"
+                            id="collaboration"
+                            name="reason"
+                            value="collaboration"
+                            required>
+                        <label for="collaboration">Collaboration</label>
+                    </div>
+
+                    <div>
+                        <input
+                            type="radio"
+                            id="question"
+                            name="reason"
+                            value="question">
+                        <label for="question">General Question</label>
+                    </div>
+
+                    <div>
+                        <input
+                            type="radio"
+                            id="other"
+                            name="reason"
+                            value="other">
+                        <label for="other">Other</label>
+                    </div>
+                </fieldset>
+
+                <!-- Dropdown menu - Visitors choose how they want to be contacted -->
+                <div>
+                    <label for="contact-method">
+                        Preferred Way to Be Contacted:
+                    </label>
+
+                    <select id="contact-method" name="contact-method" required>
+                        <option value="" disabled selected>
+                            Select an option
+                        </option>
+                        <option value="email">Email</option>
+                        <option value="github">GitHub</option>
+                        <option value="no-preference">No Preference</option>
+                    </select>
+                </div>
+
+                <!-- Submit button (form needs a backend to send messages) -->
                 <button type="submit">Send Message</button>
             </form>
         </section>

@@ -99,23 +99,20 @@ and some space around the text so it looks nicer */
 }
 
 
-/* Contact headings - This changes the size of the headings
-inside each contact section */
+/* Contact headings */
 .contact h2 {
     font-size: 28px;
 }
 
 
-/* Contact paragraphs - This makes the text easier to read
-and changes the color to one of my variables */
+/* Contact paragraphs */
 .contact p {
     color: var(--cocoa);
     line-height: 1.6;
 }
 
 
-/* Contact links - This changes the color of links
-so they stand out from the normal text */
+/* Contact links */
 .contact a {
     color: var(--terracotta);
     font-weight: 600;
@@ -124,16 +121,15 @@ so they stand out from the normal text */
 }
 
 
-/* Contact link hover - This makes links change color
-when someone puts their mouse over them */
+/* Contact link hover */
 .contact a:hover {
     color: var(--cocoa);
     text-decoration: underline;
 }
 
 
-/* Form labels - This makes the labels appear above
-the input fields instead of next to them */
+/* Form labels - I put display block here so that the labels
+show up above the text boxes instead of being next to them */
 .contact label {
     display: block;
     margin-bottom: 5px;
@@ -141,8 +137,9 @@ the input fields instead of next to them */
 }
 
 
-/* Form inputs - This styles the text boxes where
-someone can enter their name and email */
+/* Form inputs - This is for the name and email boxes.
+I made them take up the full width and added padding so
+the text isn't touching the edges of the boxes */
 .contact input {
     width: 100%;
     padding: 10px;
@@ -157,8 +154,8 @@ someone can enter their name and email */
 }
 
 
-/* Text area - This styles the larger box where
-someone can type their message */
+/* Text area - Basically the same as the inputs but this
+one is for the bigger message box */
 .contact textarea {
     width: 100%;
     padding: 10px;
@@ -173,8 +170,60 @@ someone can type their message */
 }
 
 
-/* Submit button - This changes how the button looks
-and makes the mouse show a pointer when hovering */
+/* Radio buttons - Since I already made all inputs 100% width,
+I have to change the radio buttons back to auto or else
+they would take up a bunch of space */
+.contact input[type="radio"] {
+    width: auto;
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+
+
+/* Radio labels - I used inline here because otherwise
+the labels would appear under the radio buttons instead
+of next to them */
+.contact input[type="radio"] + label {
+    display: inline;
+    margin-right: 15px;
+}
+
+
+/* Radio group - This is just the box around the radio
+button options so they are all grouped together */
+.contact fieldset {
+    border: 2px solid var(--caramel);
+    border-radius: 8px;
+    margin-bottom: 15px;
+    padding: 15px;
+}
+
+
+/* Radio group heading */
+.contact legend {
+    font-weight: 600;
+}
+
+
+/* Dropdown menu - I used the same colors and border as
+the other input boxes so everything matches */
+.contact select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+
+    background-color: var(--cream);
+    border: 2px solid var(--caramel);
+    border-radius: 8px;
+
+    font-family: "Manrope", sans-serif;
+    box-sizing: border-box;
+}
+
+
+/* Submit button - Just changes the colors and size of the
+button. Cursor pointer makes the mouse turn into the little
+hand thing when you hover over it */
 .contact button {
     background-color: var(--terracotta);
     color: var(--off-white);
@@ -189,8 +238,7 @@ and makes the mouse show a pointer when hovering */
 }
 
 
-/* Button hover - Changes the background color
-when someone puts their mouse over the button */
+/* Button hover */
 .contact button:hover {
     background-color: var(--cocoa);
 }
